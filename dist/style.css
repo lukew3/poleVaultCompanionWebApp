@@ -1,0 +1,37 @@
+body {
+  background-color: #E6E6E6;
+}
+
+h1 {
+  font-family: "Arial";
+  text-align: center;
+}
+
+#columnsContainer {
+  position: relative;
+  height: 97vh;
+}
+#columnsContainer #polesPositions {
+  position: absolute;
+  background-color: #FFFFFF;
+  height: 96vh;
+  width: 30vw;
+  left: 2.5vw;
+}
+#columnsContainer #polesPositions #content {
+  padding-left: 10vw;
+}
+#columnsContainer #Calculator {
+  position: absolute;
+  background-color: #FFFFFF;
+  height: 96vh;
+  width: 30vw;
+  left: 35vw;
+}
+#columnsContainer #Tips {
+  position: absolute;
+  background-color: #FFFFFF;
+  height: 96vh;
+  width: 30vw;
+  left: 67.25vw;
+}
