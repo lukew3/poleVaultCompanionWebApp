@@ -1,31 +1,54 @@
-
-<div id="columnsContainer">
-  <div id="polesPositions">
-    <h1>Poles and Positions</h1>
-    <div id="boxContent">
-      <ul>
-        <li>Primary Pole</li>
+<div class="carousel-wrap">
+  <div class="owl-carousel">
+    <div class="polesPositions card">
+      <h1>Poles and Positions</h1>
+      <div id="boxContent">
         <ul>
-          <li>Length - 12'</li>
-          <li>Weight - 150 lbs</li>
-          <li>Run-up distance - 66'</li>
-          <li>Grip height - Top hand, bottom of tape</li>
+          <li>Primary Pole</li>
+          <ul>
+            <li>Length - 12'</li>
+            <li>Weight - 150 lbs</li>
+            <li>Run-up distance - 66'</li>
+            <li>Grip height - Top hand, bottom of tape</li>
+          </ul>
+          <li>Secondary Pole</li>
+          <ul>
+            <li>Length - null</li>
+            <li>Weight - null</li>
+            <li>Run-up distance - null</li>
+            <li>Grip height - null</li>
+          </ul>
         </ul>
-        <li>Secondary Pole</li>
-        <ul>
-          <li>Length - null</li>
-          <li>Weight - null</li>
-          <li>Run-up distance - null</li>
-          <li>Grip height - null</li>
-        </ul>
-      </ul>
+      </div>
+    </div>
+    <div class="Calculator card">
+      <h1>Calculator</h1>
+      <h3>Simple Addition Test</h3>
+      <form name="formcalc">
+        Number 1: <input type="text" name="txtnum1">
+        <br>
+        Number 2: <input type="text" name="txtnum2">
+        <br>
+        Result: <input type="text" name="txtres"><br>
+        <input type="button" value="Calculate" onclick="sumValues()">
+      </form>
+      <!--<p>This progam works by using the formula (1/2)MV^2 = Mg(Δh) where:<br>
+        M is the mass of the pole vaulter<br>
+        V is the velocity of the pole vaulter just before the vault<br>
+        g is the gravitational constant, equal to 9.8 m/s2<br> 
+        Δh is the change in height of the pole vaulter's center of mass <br>
+        Δh = (1/2)V2/g (the mass M cancels out)<br>
+        Therefore, the predicted vault height, should be equal to Δh + the distance of the vaulters center of mass from the ground</p>-->
+      <h3>Height Predictor</h3>
+      <form name="heightPredictor">
+        <!--Mass in lbs: <input type="text" name="mass"><br>-->
+        Velocity of vaulter (m/s): <input type="text" name="vel"><br>
+        Height(in): <input type="text" name="height"><br>
+        Prediction: <input type="text" name="output"><br>
+        <input type="button" value="Simulate" onclick="vaultPredictor()">
+    </div>
+    <div class="Tips card">
+      <h1>Tips</h1>
     </div>
   </div>
-  <div id="Calculator">
-    <h1>Calculator</h1>
-  </div>
-  <div id="Tips">
-    <h1>Tips</h1>
-  </div>
 </div>
-
