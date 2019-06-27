@@ -4,37 +4,49 @@ $card: #FFFFFF;
 body {
   background-color: $background;
 }
+.carousel-wrap {
+  margin: 5vh auto;
+  padding: 0 ;
+  width: 80%;
+  position: relative;
+}
+
+/* fix blank or flashing items on carousel */
+.owl-carousel .card {
+  position: relative;
+  z-index: 100; 
+  -webkit-backface-visibility: hidden; 
+}
+
+/* end fix */
+.owl-nav > div {
+  margin-top: -26px;
+  position: absolute;
+  top: 50%;
+  color: #cdcbcd;
+}
+
+.owl-nav i {
+  font-size: 52px;
+}
+
+.owl-nav .owl-prev {
+  left: -30px;
+}
+
+.owl-nav .owl-next {
+  right: -30px;
+}
+
+//My own personal additions
 h1 {
   font-family: "Arial";
   text-align: center;
 }
-#columnsContainer {
-  //text-align: center;
-  position: relative;
-  //background-color: red;
-  height: 97vh;
-  #polesPositions {
-    position: absolute;
-    background-color: $card;
-    height: 96vh;
-    width: 30vw;
-    left: 2.5vw;
-    #content {
-      padding-left: 10vw;
-    }
-  }
-  #Calculator {
-    position: absolute;
-    background-color: $card;
-    height: 96vh;
-    width: 30vw;
-    left: 35vw;
-  }
-  #Tips {
-    position: absolute;
-    background-color: $card;
-    height: 96vh;
-    width: 30vw;
-    left: 67.25vw;
-  }
+.card {
+  position: absolute;
+  background-color: $card;
+  height: 80vh;
+  width: 80%;
+  padding: 5%;
 }

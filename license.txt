@@ -1,10 +1,10 @@
 
 
 <!--
-Copyright (c) 2019 by Luke Weiler (https://codepen.io/lukew3/pen/agyYwq)
+Copyright (c) 2019 by Luke Weiler (https://codepen.io/lukew3/pen/KjyoVj)
 
 
-Fork of an original work by Luke Weiler (https://codepen.io/lukew3/pen/ydovpB)
+Fork of an original work by Nelis (https://codepen.io/Nelis/pen/reEjZz)
 
 
 
